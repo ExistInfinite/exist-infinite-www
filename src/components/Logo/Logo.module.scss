@@ -1,0 +1,38 @@
+@mixin layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+:local(.backgroundLayer1) {
+  @include layer;
+  background: linear-gradient(0deg, #228aaa 0%,#263c5e 26%,#3f1360 51%,#2a684b 75%,#8eb763 100%);
+  opacity: 1;
+  z-index: 10;
+}
+
+:local(.backgroundLayer2) {
+  @include layer;
+  background: linear-gradient(145deg, #228aaa 0%,#263c5e 26%,#3f1360 51%,#2a684b 75%,#8eb763 100%);
+  opacity: .5;
+  z-index: 20;
+}
+
+:local(.backgroundLayer3) {
+  @include layer;
+  background: linear-gradient(-145deg, #228aaa 0%,#3f1360 51%,#2a684b 100%);
+  opacity: .4;
+  z-index: 30;
+}
+
+:local(.container) {
+  @include layer;
+  z-index: 40;
+
+  img {
+    width: 30%;
+  }
+}
