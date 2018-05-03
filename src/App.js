@@ -1,17 +1,13 @@
-import React, { Component } from 'react';
-import 'normalize.css';
-import Logo from './components/Logo/Logo';
-import Posts from './components/Posts/Posts';
+import React from 'react';
+import { Route } from 'react-router-dom';
+import GlobalNav from './components/GlobalNav';
+import Home from './pages/Home';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Logo />
-        <Posts />
-      </div>
-    );
-  }
-}
+const Component = () => (
+  <div>
+    <GlobalNav />
+    <Route exact={true} path="/" component={Home}/>
+  </div>
+);
 
-export default App;
+export default Component;

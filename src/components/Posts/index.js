@@ -15,8 +15,8 @@ function Posts({ data: {
   return (
     <div>
       <button onClick={() => refetch()}>Refresh</button>
-      <ul>{edges && edges.map(post =>
-        <li key={post.id}>{post.title}</li>
+      <ul>{edges && edges.map(({ node: post }) =>
+        <li key={post.id}>{post.title + '-' + post.id}</li>
       )}</ul>
     </div>
   );
