@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import styles from './Logo.module.scss';
 
-class App extends Component {
+class Logo extends Component {
   render() {
     return (
       <div>
@@ -17,4 +17,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Logo;

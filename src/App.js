@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import Logo from './components/Logo/Logo';
 import 'normalize.css';
+import Logo from './components/Logo/Logo';
+import Posts from './components/Posts/Posts';
 
 class App extends Component {
   render() {
     return (
-      <Logo />
+      <div>
+        <Logo />
+        <Posts />
+      </div>
     );
   }
 }
