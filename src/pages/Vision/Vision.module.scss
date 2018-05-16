@@ -6,28 +6,32 @@
 :local(.title) {
   color: purple;
   opacity: .6;
-  font-size: 20rem;
+  font-size: 12rem;
   text-transform: lowercase;
   position: fixed;
-  top: -4rem;
-  right: 3rem;
+  top: -.1rem;
+  right: 1rem;
 }
 
 :local(.content) {
-  padding: 10rem;
+  padding: 3rem;
 
   p {
-    font-size: 2rem;
-    color: #823;
+    color: #423321;
   }
 
   p:nth-child(1) {
-    font-size: 6rem;
+    font-size: 2rem;
+    line-height: 2rem;
     color: teal;
+    position: relative;
+    left: -2rem;
+    margin-top: 0;
 
     strong {
+      font-size: 3rem;
+      line-height: 3rem;
       display: block;
-      background: pink;
     }
   }
 }
