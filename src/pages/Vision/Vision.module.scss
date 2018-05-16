@@ -1,0 +1,33 @@
+:local(.Vision) {
+  width: 100vw;
+  height: 100vh;
+}
+
+:local(.title) {
+  color: purple;
+  opacity: .6;
+  font-size: 20rem;
+  text-transform: lowercase;
+  position: fixed;
+  top: -4rem;
+  right: 3rem;
+}
+
+:local(.content) {
+  padding: 10rem;
+
+  p {
+    font-size: 2rem;
+    color: #823;
+  }
+
+  p:nth-child(1) {
+    font-size: 6rem;
+    color: teal;
+
+    strong {
+      display: block;
+      background: pink;
+    }
+  }
+}
